@@ -5,8 +5,7 @@ Pipeline {
         stage ('Source Code') {
             steps {
                 //get the source code from the git repository
-            git url: 'https://github.com/KrishnaV94/game-of-life.git'
-            branch: 'master'
+            git (url: 'https://github.com/KrishnaV94/game-of-life.git', branch: 'master')
             }
         }
         stage ('Build the code') {
