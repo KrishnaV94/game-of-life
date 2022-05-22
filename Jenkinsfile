@@ -1,5 +1,5 @@
 Pipeline {
-    agent {any}
+    agent {none}
     triggers { cron('0 * * * *') }
     stages {
         stage ('Source Code') {
