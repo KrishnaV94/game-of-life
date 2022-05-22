@@ -19,9 +19,8 @@ Pipeline {
                 junit testResults: '**/surefire-reports/*.xml'
             }
         }
-        }
     }
-    post {
+        post {
         success {
             //Send the Success notification
             echo 'Successful'
